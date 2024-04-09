@@ -1,3 +1,95 @@
+//--------------------------------------------------------------------------------------------------------GSAP ALL SCREEN
+gsap.from('body', {
+    opacity:0,
+    duration : 0.5,
+  })
+/*
+gsap.fromTo("#nav-text", {
+    duration: 0.5,
+  },{   
+    ease: 'none',
+    scrollTrigger: {
+        trigger: 'body',
+        start:'top bottom',
+        end:'bottom top',
+        scrub: true,
+        markers:true
+    }
+  })
+*/
+
+const timeline = gsap.timeline({
+    defaults:{
+        duration:0.5,
+    },
+
+});
+
+timeline.from('body',{
+    duration:0.5,
+    ease:'none'
+})
+.fromTo(
+    ['#nav-text'],{
+        opacity:0,
+        y:-10,
+    },{
+        duration:0.5,
+        y:0,
+        ease:'none',
+        opacity:1,
+        ease:'power1.out',
+        stagger:0.2,
+
+    },)
+/*
+//----------------------------------------------------------------------------------------------------------GSAP
+gsap.from('#nav , #contact-titre', {
+    opacity:0.5,
+    duration : 1,
+  })
+
+gsap.fromTo("#info-contact", {
+    duration: 0.5,
+  },{   
+
+    ease: 'none',
+    scrollTrigger: {
+        trigger: '#main',
+        start:'top bottom',
+        end:'bottom top',
+        scrub: true,
+        //markers:true
+    }
+  })
+
+const timeline = gsap.timeline({
+    defaults:{
+        duration:1,
+    },
+
+});
+
+timeline.from('body',{
+    duration:1.5,
+    ease:'none'
+})
+.fromTo(
+    ['#info-contact'],{
+        opacity:0,
+        y:-20,
+    },{
+        duration:0.6,
+        y:0,
+        ease:'none',
+        opacity:1,
+        ease:'power1.out',
+        stagger:0.2,
+
+    },)
+
+
+/*
 $( '#collection' ).click(function(){ 
 
     $('html,body').animate({

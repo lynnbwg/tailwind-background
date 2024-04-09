@@ -17,45 +17,48 @@
         <div class="h-full md:p-8 overflow-y-auto bg-gray-50 dark:bg-gray-800">
            <ul class="space-y-1 md:text-2xl font-bold">
               <li>
-                 <a href="#" class="flex items-center p-1 rounded-lg font-bold dark:text-white hover:text-green-800 group">
+                 <a href="#" id="nav-text" class="flex items-center p-1 rounded-lg font-bold dark:text-white hover:text-green-800 group">
                     <span class="ms-3">Accueil</span>
                  </a>
               </li>
               <li>
-                <a href="#" class="flex items-center p-1 rounded-lg font-bold dark:text-white hover:text-green-800 group">
+                <a href="#" id="nav-text" class="flex items-center p-1 rounded-lg font-bold dark:text-white hover:text-green-800 group">
                    <span class="ms-3">Produits</span>
                 </a>
              </li>
              <li>
-              <a href="single.html" class="flex items-center p-1 rounded-lg font-bold dark:text-white hover:text-green-800 group">
+              <a href="single.html" id="nav-text" class="flex items-center p-1 rounded-lg font-bold dark:text-white hover:text-green-800 group">
                  <span class="ms-3">Profil</span>
               </a>
            </li>
            <li>
-            <a href="#" class="flex items-center p-1  rounded-lg font-bold dark:text-white hover:text-green-800 group">
+            <a href="#" id="nav-text" class="flex items-center p-1  rounded-lg font-bold dark:text-white hover:text-green-800 group">
                <span class="ms-3">Message</span>
             </a>
          </li>
          </aside>
 <!-------------------------------------------------------------------------------------LOGO CONTAINER-->
   <div class="container w-7/12 ">
-    <div class="logo font-bold pl-8">VILLAGE VERT</div>
-    <p class="font-bold pl-8 pt-8">Qu'est ce que village vert ? C'est une plateforme en ligne qui permet aux utilisateurs d'acheter, de vendre et d'échanger des aliments et des préparations venu tout droit de son jardin. Les membres peuvent créer des annonces pour leurs articles, interagir avec d'autres utilisateurs et effectuer des transactions sécurisées. La plateforme vise à encourager l'arrêt du gaspillage alimentaire et donner une seconde vie aux cultivation à petite échèlle qui sont de trop et en favorisant le partage.</p>
+    <div id="logo" class="logo font-bold pl-8">VILLAGE VERT</div>
+    <p id="logo" class="font-bold pl-8 pt-8">Qu'est ce que village vert ? C'est une plateforme en ligne qui permet aux utilisateurs d'acheter, de vendre et d'échanger des aliments et des préparations venu tout droit de son jardin. Les membres peuvent créer des annonces pour leurs articles, interagir avec d'autres utilisateurs et effectuer des transactions sécurisées. La plateforme vise à encourager l'arrêt du gaspillage alimentaire et donner une seconde vie aux cultivation à petite échèlle qui sont de trop et en favorisant le partage.</p>
   </div>
 <!-------------------------------------------------------------------------------------FIRST CONTAINER-->
 
 <div class="flex">
 <div class="container flex justify-between w-7/12  pt-12 pl-8 ">
-  <img class="object-cover h-[32rem] w-96" src="src/img/chou.jpg">
+ <!-- <img class="object-cover h-[32rem] w-96" src="src/img/chou.jpg">-->
+  <div class="relative h-[32rem] w-96"> 
+    <img  class="absolute object-cover h-[32rem] w-96 top-0 left-0 z-50 opacity-1 transition-opacity hover:opacity-0" src="/src/img/chou.jpg"/>
+    <img a href="#" class="absolute md:inset-y-36 md:inset-x-24 md:w-48 object-contain cursor-pointer" src="src/img/chou-plein.gif"/>
+    <img a href="#" id="animation-join" class="absolute md:inset-y-1/4 md:inset-x-16 md:w-64 object-contain cursor-pointer" src="/src/img/text-in-circle-join-team-vv.png"/>
+  </div>
   <div class=""><img class="object-cover h-96 w-80" src="src/img/salade.jpg"><p class="p-2 w-80 text-fuchsia-600">nous cjduizbo cednbsjao hcfdeujzu sdzj cikeoszab</p></div>
-
 </div>
 <h1 class="w-1/4 pt-12 pl-12 text-4xl font-semibold ">Connecter - Vendre - Echanger </br><u><p class="text-xl pt-8">shop now</p></u></h1>
 </div>
 <!-------------------------------------------------------------------------------------PRODUITS-->
 
-
-<div class="flex flex-nowrap mx-8 mt-24 overflow-scroll w-4/5">
+<div class="flex flex-nowrap mx-8 my-28 overflow-scroll w-4/5">
 
   <div class="w-52 h-72 pt-4 shrink-0 snap-center ">
     <h1 class="text-4xl font-semibold px-0">Dernières chance</h1>
@@ -63,31 +66,31 @@
       <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
     </svg>
   </div> 
-  <div class="p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/citrouille_01.gif">
   </div>
-  <div class="p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/courgette_02.gif">
   </div>
-  <div class="p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/citrouille_02.gif">
   </div>
-  <div class="item p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/citrouille_03.gif">
   </div>
-  <div class="item p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/conf.jpg">
   </div>
-  <div class="item p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/courgette_03.gif">
   </div>
-  <div class="item p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/courgette_02.gif">
   </div>
-  <div class="item p-4 snap-center shrink-0 ">
-    <img class="w-64 h-72 object-cover" src="src/img/courgette_03.gif">
+  <div class="p-2 snap-center shrink-0 ">
+    <img class="w-52 h-72 object-cover" src="src/img/courgette_03.gif">
   </div>
-  <div class="w-44 h-72 pt-4 shrink-0 snap-center ">
+  <div class="w-44 h-72 p-2 shrink-0 snap-center ">
     <h3 class="text-xl px-0 text-right cursor-pointer">Voir tout les produits</h3>
   </div> 
  
@@ -95,7 +98,7 @@
 
   <!-------------------------------------------------------------------------------------TOP UTILISATEURS-->
 
-<div class="flex mx-8 mt-24">
+<div class="flex mx-8 my-28">
   <div class="container flex justify-between w-7/12 ">
     <div class=""><img class=" -pink-600 object-cover h-72 w-56" src="src/img/pp_mams.png"><p class="p-2 w-56 cursor-pointer"><u>sylvalentin</u></p></div>
     <div class=""><img class=" -pink-600 object-cover h-64 w-56" src="src/img/pp_03.gif"><p class="p-2 w-56 cursor-pointer"><u>arnofruitlegumes</u></p></div>
@@ -107,7 +110,7 @@
   <!-------------------------------------------------------------------------------------DERNIERS AJOUTS-->
 
 
-<div class="flex flex-nowrap w-4/5 mx-8 mt-24 overflow-scroll">
+<div class="flex flex-nowrap md:w-4/5 md:mx-8 md:my-28 overflow-scroll">
 
   <div class="w-52 h-72 pt-4 shrink-0 snap-center ">
     <h1 class="text-4xl font-semibold px-0">Dernièrs ajouts</h1>
@@ -115,31 +118,31 @@
       <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
     </svg>
   </div> 
-  <div class="p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/citrouille_01.gif">
   </div>
-  <div class="p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/courgette_02.gif">
   </div>
-  <div class="p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/citrouille_02.gif">
   </div>
-  <div class="item p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/citrouille_03.gif">
   </div>
-  <div class="item p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/conf.jpg">
   </div>
-  <div class="item p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/courgette_03.gif">
   </div>
-  <div class="item p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/courgette_02.gif">
   </div>
-  <div class="item p-4 snap-center shrink-0 ">
+  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/courgette_03.gif">
   </div>
-  <div class="w-44 h-72 pt-4 shrink-0 snap-center ">
+  <div class="w-44 h-72 p-2 shrink-0 snap-center ">
     <h3 class="text-xl px-0 text-right cursor-pointer">Voir tout les produits</h3>
   </div> 
  
@@ -147,7 +150,7 @@
 
   <!--------------------------------------------------------------------------------------------------------FOOTER-->
 
-  <div class="container-md flex justify-between md:w-10/12 border-t border-emerald-400 p-8 mt-12">
+  <div class="container-md flex justify-between md:w-10/12 border-t border-emerald-400 p-8">
 
     <ul class="">
       <li class="text-xs block font-bold text-[0.6rem] pb-2 lg:text-[0.8rem]" href="#">Adresse</li>
@@ -211,308 +214,14 @@
 
   </div>
 
-        <!--title
-        <div class="relative item max-w-28 max-h-48 p-2 md:max-w-64 md:max-h-96 snap-x">
-          <h1 class="absolute bottom-0 text-4xl font-semibold px-0 snap-center">Bestsellers</h1>
-        </div> 
-                
-        first item
-        <div class="item flex-nowrap max-w-28 max-h-48 p-2 md:max-w-64 md:max-h-96 snap-x">
-          <img class="snap-center" src="./src/img/frederic-dupont-X2TRduCQgOQ-unsplash.jpg">
-            <h3 class="text-lg  mt-2 leading-snug">Morning bowls</h3>
-            <p class="mb-3"> 25 $</p>
-            <button class="add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white py-2 px-4 hover:-transparent">
-              add to cart
-            </button>
-          </div>          
-                    
-    </div>
-</div>-->
-
-<!-------------------------------------------------------------------------------------END BESTSELLERS-->
-          <!--<li>
-             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:text-green-800 dark:hover:bg-gray-700 group">
-                <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                   <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/>
-                   <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z"/>
-                   <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z"/>
-                </svg>
-                <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
-             </a>
-          </li>
-       </ul>
-    </div>
- </aside>
-<!-------------------------------------------------------------------------------------NAVIGATION-->
-<!--
-<nav class="flex justify-between bg-slate-50 fixed top-0 left-0 right-0">
-
-  <li class="text-center flex ml-4">
-    <h3 class="block py-8 px-4" href="#">Village Vert</h3>
-  </li>
-
-    <ul class="flex">
-    <li class="flex">
-      <a class="text-center block py-8 " href="#">SHOP</a>
-    </li>
-    <li class="flex items-center py-8 mx-3">
-        <svg height="5" width="25">
-          <line x1="0" y1="0" x2="200" y2="0" style="stroke:#ea580c;stroke-width:2" />
-        </svg>
-    </li>
-    <li class="flex">
-      <a class="text-center block py-8 " href="#">ABOUT</a>
-    </li>
-    <li class="flex items-center py-8 mx-3">
-      <svg height="5" width="25">
-        <line x1="0" y1="0" x2="200" y2="0" style="stroke:#ea580c;stroke-width:2" />
-      </svg>
-  </li>
-    <li class="flex">
-      <a class="text-center block py-8 " href="#">CONTACTS</a>
-    </li>
-    <li class="flex items-center py-8 mx-3">
-      <svg height="5" width="25">
-        <line x1="0" y1="0" x2="200" y2="0" style="stroke:#ea580c;stroke-width:2" />
-      </svg>
-  </li>
-    <li class="flex">
-      <a class="text-center block py-8" href="#">DELIVERY & RETURN</a>
-    </li>
-    <li class="flex items-center py-8 mx-3">
-      <svg height="5" width="25">
-        <line x1="0" y1="0" x2="200" y2="0" style="stroke:#ea580c;stroke-width:2" />
-      </svg>
-  </li>
-    <li class="flex">
-      <a class="text-center block py-8" href="#">FOR RESTAURANTS</a>
-    </li>
-  </ul>
-
-    <li class="text-center flex mr-4">
-      <h3 class="shopping-cart block py-8 px-4" href="#">CART</h3>
-    </li>
-</nav>
--->
-<!-------------------------------------------------------------------------------------FIN NAVIGATION-->
-<!-------------------------------------------------------------------------------------HEAD CONTAINER-->
-<!--
-<div class="md-container mx-0 mt-6">
-  <div class="columns-2">
-    
-    <div class="row">
-     <img class="mr-4" src="./src/img/tom-crew-oHrC8V_XRU4-unsplash.jpg">
-    </div>
-
-    <span class="dot"><button id="collection">See collection</button></span>
-
-    <div class="row p-20">
-      <h1 class="text-5xl mb-10">Back to the moon</h1>
-      <img class="w-80 h-100" src="./src/img/tom-crew-U9gXnSGSB3w-unsplash.jpg">
-    </div>
-    </div>
-</div>
--->
-<!-------------------------------------------------------------------------------------END HEAD CONTAINER-->
-<!-------------------------------------------------------------------------------------BESTSELLERS-->
-<!--
-<div class="container mx-auto px-8 mt-12 pb-12">
-  <h1 class="text-4xl font-semibold text-center">Bestsellers</h1>
-    <div class="content flex flex-wrap justify-center m-2 mt-6">
-      <span><i class="shopping-cart"></i></span>
-      <div class="clear"></div>
-
-      <div class="items flex flex-wrap justify-center mx-0">
-          <!--first item-->
-           <!--
-          <div class="item w-80 p-4">
-              <img src="./src/img/frederic-dupont-X2TRduCQgOQ-unsplash.jpg">
-                <h3 class="text-lg  mt-2 leading-snug">Morning bowls</h3>
-                <p class="mb-3"> 25 $</p>
-                <button class="add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white py-2 px-4 hover:-transparent">
-                  add to cart
-                </button>
-            </div>
-          -->
-
-
-          <!--second item-->
-         <!-- <div class="item w-80 p-4">
-              <img src="./src/img/yana-hurskaya-uUc-NWeDJxk-unsplash.jpg">
-                <h3 class="text-lg  mt-2 leading-snug">Vase about the moon</h3>
-                <p class="mb-3"> 40 $</p>
-                <button class="add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white py-2 px-4 hover:-transparent">
-                  add to cart
-                </button>
-            </div>
-
-
-         <!--third item-->
-           <!-- <div class="item w-80 p-4">
-                    <img src="./src/img/diana-light-u_jt9A7FADk-unsplash.jpg">
-                      <h3 class="text-lg mt-2 leading-snug">Coffe cup</h3>
-                      <p class="mb-3"> 18 $</p>
-                      <button class="add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white py-2 px-4 hover:-transparent">
-                      add to cart
-                      </button>
-            </div>
-    </div>
-</div>
-
-<!-------------------------------------------------------------------------------------END BESTSELLERS-->
-<!-------------------------------------------------------------------------------------CONTAINER EVERY ITEM-->
-
-<!--<div class="container second-container mx-auto px-8 mt-12 pb-12">
-      <h1 class="font-semibold text-4xl text-center ">Every Item</h1>         
-        <div class="content flex flex-wrap justify-center m-2 mt-6">
-
-          <span><i class="shopping-cart"></i></span>
-           <div class="clear"></div>
-               
-           <div class="items flex flex-wrap justify-center mx-0">
-                   <!--first item-->
-                   <!-- <div class="item w-52 p-4">
-                        <img src="./src/img/frederic-dupont-X2TRduCQgOQ-unsplash.jpg">
-                        <h3 class="text-base mt-2 leading-snug">Morning bowls</h3>
-                         <p class="mb-3 text-sm"> 25 $</p>
-                         <button class="text-sm add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white px-2 hover:-transparent">
-                          add to cart
-                          </button>
-                    </div>
-                     
-                    
-                             <!--second item-->
-                            <!-- <div class="item w-52 p-4">
-                              <img src="./src/img/diana-light-u_jt9A7FADk-unsplash.jpg">
-                              <h3 class="text-base mt-2 leading-snug">Coffee cups</h3>
-                               <p class="mb-3 text-sm"> 18 $</p>
-                               <button class="text-sm add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white px-2 hover:-transparent">
-                                add to cart
-                                </button>
-                          </div>
-                          
-      
-                         <!--third item-->
-                       <!--   <div class="item w-52 p-4">
-                                <img src="./src/img/fig-rosewood-yAAYF_UFxrQ-unsplash.jpg">
-                                <h3 class="text-base mt-2 leading-snug">Vase outer space</h3>
-                                <p class="mb-3 text-sm"> 35 $</p>
-                                <button class="text-sm add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white px-2 hover:-transparent">
-                                add to cart
-                                </button>
-                          </div>  
-              <!--first item-->
-             <!-- <div class="item w-52 p-4">
-                <img src="./src/img/yana-hurskaya-uUc-NWeDJxk-unsplash.jpg">
-                <h3 class="text-base mt-2 leading-snug">Vase about the moon</h3>
-                 <p class="mb-3 text-sm"> 40 $</p>
-                 <button class="text-sm add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white px-2 hover:-transparent">
-                  add to cart
-                  </button>
-            </div>
-            
-
-           <!--first item-->
-           <!-- <div class="item w-52 p-4">
-                  <img src="./src/img/kasia-sikorska-II-2oYb9HPs-unsplash.jpg">
-                  <h3 class="text-base mt-2 leading-snug">Moon plate</h3>
-                  <p class="mb-3 text-sm"> 16 $</p>
-                  <button class="text-sm add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white px-2 hover:-transparent">
-                  add to cart
-                  </button>
-            </div>   
-            
-            
-                     <!--first item-->
-                    <!-- <div class="item w-52 p-4">
-                      <img src="./src/img/kasia-sikorska-UMtUTbxLmL0-unsplash.jpg">
-                      <h3 class="text-base mt-2 leading-snug">Full moon plate</h3>
-                       <p class="mb-3 text-sm"> 20 $</p>
-                       <button class="text-sm add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white px-2 hover:-transparent">
-                        add to cart
-                        </button>
-                  </div>
-                  
-
-                 <!--first item-->
-                 <!-- <div class="item w-52 p-4">
-                        <img src="./src/img/larisa-birta-h9kODfOsyOU-unsplash.jpg">
-                        <h3 class="text-base mt-2 leading-snug">Plateau</h3>
-                        <p class="mb-3 text-sm"> 32 $</p>
-                        <button class="text-sm add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white px-2 hover:-transparent">
-                        add to cart
-                        </button>
-                  </div>  
-                      <!--first item-->
-                     <!--<div class="item w-52 p-4">
-                        <img src="./src/img/bruno-emmanuelle-lbEjCFzbXxo-unsplash.jpg">
-                        <h3 class="text-base mt-2 leading-snug">Rose coffee cups</h3>
-                         <p class="mb-3 text-sm"> 18 $</p>
-                         <button class="text-sm add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white px-2 hover:-transparent">
-                          add to cart
-                          </button>
-                    </div>
-                    
-
-                   <!--first item-->
-                    <!--<div class="item w-52 p-4">
-                          <img src="./src/img/yana-hurskaya-zeGT9j4ltRA-unsplash.jpg">
-                          <h3 class="text-base mt-2 leading-snug">Planet vases</h3>
-                          <p class="mb-3 text-sm"> 38 $</p>
-                          <button class="text-sm add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white px-2 hover:-transparent">
-                          add to cart
-                          </button>
-                          </div>
-
-                           <!--first item-->
-                           <!--<div class="item w-52 p-4">
-                            <img src="./src/img/diana-light-3-6mITmMyGI-unsplash.jpg">
-                            <h3 class="text-base mt-2 leading-snug">Coffee cups</h3>
-                            <p class="mb-3 text-sm"> 18 $</p>
-                            <button class="text-sm add-to-cart bg-transparent  -orange-600 rounded-full hover:bg-orange-600 text-white-700 hover:text-white px-2 hover:-transparent">
-                            add to cart
-                            </button>
-                      </div>  
-                 </div>
-                 </div>
-                 
-      </div>
-      </div>
-                 <!-------------------------------------------------------------------------------------FOOTER-->
-
-<!--<div class="flex justify-between bg-slate-100 py-8">
-
-  <div class="text-left ml-8">
-    <h3 class="block" href="#">MASTERSKAYA </br>
-    <p class="text-xs">We make beautiful and high-quality household items </br> because we want the little things around us to be special.</p></h3>
-  </div>
-  
-
-    <ul>
-      <li class="text-xs block" href="#">SHOP</li>
-      <li class="text-xs block" href="#">ABOUT</li>
-      <li class="text-xs block" href="#">CONTACTS</li>
-      <li class="text-xs block" href="#">DELIVERY & RETURN</li>
-      <li class="text-xs block" href="#">FOR RESTAURANTS</li>
-      <li class="text-xs block" href="#">LOOKBOOK</li>
-     </ul>
-
-
-     <ul>
-      <li class="text-xs block" href="#">PINTEREST</li>
-      <li class="text-xs block" href="#">YOUTUBE</li>
-      <li class="text-xs block" href="#">VK</li>
-    </ul>
-
-    <ul class="mr-10">
-      <li class="text-xs block" href="#">+7 999 888 77 66</li>
-      <li class="text-xs block" href="#">MASTERSKAYA@HOTMAIL.COM</li>
-      <li class="text-xs block" href="#">COPYRIGHT</li>
-    </ul>
-<!-------------------------------------------------------------------------------------FIN NAVIGATION-->
-     
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="./src/js/scripts.js"></script>
+  <script src="./src/js/main.js" defer></script>
+
+  <script src="./src/js/gsap.min.js"></script>
+  <script src="./src/js/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="./src/js/jquery-3.6.1.min.js"></script>
+  <script src="./src/js/parallax.min.js"></script>
 </body>
 </html>
