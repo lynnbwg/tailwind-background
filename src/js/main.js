@@ -1,30 +1,16 @@
-//--------------------------------------------------------------------------------------------------------GSAP ALL SCREEN
+//----------------------------------------------GSAP ALL SCREEN
 gsap.from('body', {
     opacity:0,
     duration : 0.5,
   })
-/*
-gsap.fromTo("#nav-text", {
-    duration: 0.5,
-  },{   
-    ease: 'none',
-    scrollTrigger: {
-        trigger: 'body',
-        start:'top bottom',
-        end:'bottom top',
-        scrub: true,
-        markers:true
-    }
-  })
-*/
 
 const timeline = gsap.timeline({
     defaults:{
         duration:0.5,
     },
-
 });
 
+//----------------------------------------------NAVIGATION
 timeline.from('body',{
     duration:0.5,
     ease:'none'
@@ -41,7 +27,97 @@ timeline.from('body',{
         ease:'power1.out',
         stagger:0.2,
 
-    },)
+    },) 
+//----------------------------------------------THIRD CONTAINER LAST CHANCE
+gsap.timeline({
+    scrollTrigger: {
+    trigger: "#third",
+    scrub: true,
+    start: 'top 80%',
+    end: 'bottom 70%',
+    //markers: true,
+        },
+        })
+    .fromTo(
+    "#third",
+        {
+    x: '+=20px',
+        },{ 
+    x: '0px',
+    ease: 'none',
+    duration:0.5,
+        },)    
+//----------------------------------------------FOURTH CONTAINER TOP SELLER    
+gsap.timeline({  
+    scrollTrigger: { 
+    trigger: "#fourth", 
+    //markers:true,
+    start: 'top 90%',
+    end: 'bottom 60%',
+    },})   
+.fromTo(
+    ['#top-seller'],{
+    opacity:0,
+    y:20,
+    },{
+    duration:0.5,
+    y:0,
+    ease:'none',
+    opacity:1,
+    ease:'power1.out',
+    stagger:0.2,
+    },) 
+//----------------------------------------------THIRD CONTAINER LAST CHANCE
+gsap.timeline({
+    scrollTrigger: {
+    trigger: "#fifth",
+    scrub: true,
+    start: 'top 80%',
+    end: 'bottom 70%',
+    //markers: true,
+        },
+        })
+    .fromTo(
+    "#fifth",
+        {
+    x: '+=20px',
+        },{ 
+    x: '0px',
+    ease: 'none',
+    duration:0.5,
+        },) 
+
+/*
+gsap.registerPlugin(ScrollTrigger);
+
+    $( document ).ready(function() {
+    
+            gsap.to(["#third"],{
+            x:-10,
+            ease:'none',
+            scrollTrigger:{
+            trigger:' #second',
+            start: 'top',
+            end: 'bottom',
+            pin: true,
+            scrub:true,
+            //markers:true,
+            },
+            })
+    
+    
+            gsap.timeline({
+              scrollTrigger: {
+                trigger: ".bottom-text .bottom-h1",
+                scrub: true,
+                start: 'top 90%',
+                end: 'bottom 75%%',
+                //markers: true,
+              },
+            })
+*/
+
+
 /*
 //----------------------------------------------------------------------------------------------------------GSAP
 gsap.from('#nav , #contact-titre', {

@@ -22,7 +22,7 @@
                  </a>
               </li>
               <li>
-                <a href="#" id="nav-text" class="flex items-center p-1 rounded-lg font-bold dark:text-white hover:text-green-800 group">
+                <a href="produits.html" id="nav-text" class="flex items-center p-1 rounded-lg font-bold dark:text-white hover:text-green-800 group">
                    <span class="ms-3">Produits</span>
                 </a>
              </li>
@@ -38,19 +38,19 @@
          </li>
          </aside>
 <!-------------------------------------------------------------------------------------LOGO CONTAINER-->
-  <div class="container w-7/12 ">
+  <div class="first container w-7/12 ">
     <div id="logo" class="logo font-bold pl-8">VILLAGE VERT</div>
     <p id="logo" class="font-bold pl-8 pt-8">Qu'est ce que village vert ? C'est une plateforme en ligne qui permet aux utilisateurs d'acheter, de vendre et d'échanger des aliments et des préparations venu tout droit de son jardin. Les membres peuvent créer des annonces pour leurs articles, interagir avec d'autres utilisateurs et effectuer des transactions sécurisées. La plateforme vise à encourager l'arrêt du gaspillage alimentaire et donner une seconde vie aux cultivation à petite échèlle qui sont de trop et en favorisant le partage.</p>
   </div>
 <!-------------------------------------------------------------------------------------FIRST CONTAINER-->
 
-<div class="flex">
+<div id="second" class="flex">
 <div class="container flex justify-between w-7/12  pt-12 pl-8 ">
  <!-- <img class="object-cover h-[32rem] w-96" src="src/img/chou.jpg">-->
   <div class="relative h-[32rem] w-96"> 
-    <img  class="absolute object-cover h-[32rem] w-96 top-0 left-0 z-50 opacity-1 transition-opacity hover:opacity-0" src="/src/img/chou.jpg"/>
-    <img a href="#" class="absolute md:inset-y-36 md:inset-x-24 md:w-48 object-contain cursor-pointer" src="src/img/chou-plein.gif"/>
-    <img a href="#" id="animation-join" class="absolute md:inset-y-1/4 md:inset-x-16 md:w-64 object-contain cursor-pointer" src="/src/img/text-in-circle-join-team-vv.png"/>
+    <img a href="#" class="absolute object-cover h-[32rem] w-96 top-0 left-0 z-50 opacity-1 transition-opacity hover:opacity-0 cursor-pointer" src="/src/img/chou.jpg"/>
+    <img a href="#" class="absolute md:inset-y-36 md:inset-x-24 md:w-48 object-contain" src="src/img/chou-plein.gif"/>
+    <img id="animation" class="animation absolute md:inset-y-1/4 md:inset-x-16 md:w-64 object-contain" src="/src/img/text-in-circle-join-team-vv.png"/>
   </div>
   <div class=""><img class="object-cover h-96 w-80" src="src/img/salade.jpg"><p class="p-2 w-80 text-fuchsia-600">nous cjduizbo cednbsjao hcfdeujzu sdzj cikeoszab</p></div>
 </div>
@@ -58,7 +58,7 @@
 </div>
 <!-------------------------------------------------------------------------------------PRODUITS-->
 
-<div class="flex flex-nowrap mx-8 my-28 overflow-scroll w-4/5">
+<div id="third" class="flex flex-nowrap mx-8 my-28 overflow-scroll w-4/5">
 
   <div class="w-52 h-72 pt-4 shrink-0 snap-center ">
     <h1 class="text-4xl font-semibold px-0">Dernières chance</h1>
@@ -98,46 +98,43 @@
 
   <!-------------------------------------------------------------------------------------TOP UTILISATEURS-->
 
-<div class="flex mx-8 my-28">
+<div id="fourth" class="flex mx-8 my-28">
   <div class="container flex justify-between w-7/12 ">
-    <div class=""><img class=" -pink-600 object-cover h-72 w-56" src="src/img/pp_mams.png"><p class="p-2 w-56 cursor-pointer"><u>sylvalentin</u></p></div>
-    <div class=""><img class=" -pink-600 object-cover h-64 w-56" src="src/img/pp_03.gif"><p class="p-2 w-56 cursor-pointer"><u>arnofruitlegumes</u></p></div>
-    <div class=""><img class=" -pink-600 object-cover h-60 w-56" src="src/img/pp_02.gif"><p class="p-2 w-56 cursor-pointer"><u>chantalregal</u></p></div>
+    <div id="top-seller" class=""><img class=" -pink-600 object-cover h-72 w-56" src="src/img/pp_mams.png"><p class="p-2 w-56 cursor-pointer"><u>sylvalentin</u></p></div>
+    <div id="top-seller" class=""><img class=" -pink-600 object-cover h-64 w-56" src="src/img/pp_03.gif"><p class="p-2 w-56 cursor-pointer"><u>arnofruitlegumes</u></p></div>
+    <div id="top-seller" class=""><img class=" -pink-600 object-cover h-60 w-56" src="src/img/pp_02.gif"><p class="p-2 w-56 cursor-pointer"><u>chantalregal</u></p></div>
   </div>
-  <h1 class="w-1/4 pl-12 text-4xl font-semibold ">NOS TOP VENDEURS </h1>
+  <h1 id="top-seller" class="w-1/4 pl-12 text-4xl font-semibold ">NOS TOP VENDEURS </h1>
   </div>
 
   <!-------------------------------------------------------------------------------------DERNIERS AJOUTS-->
 
 
-<div class="flex flex-nowrap md:w-4/5 md:mx-8 md:my-28 overflow-scroll">
-
-  <div class="w-52 h-72 pt-4 shrink-0 snap-center ">
+<div id="fifth" class="flex flex-nowrap md:w-4/5 md:mx-8 md:my-28 overflow-scroll">
+  <div class="w-52 h-72 pt-4 shrink-0 snap-center">
     <h1 class="text-4xl font-semibold px-0">Dernièrs ajouts</h1>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.4" stroke="currentColor" class="w-20 h-20 text-fuchsia-600">
       <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
     </svg>
   </div> 
+
   <div class="p-2 snap-center shrink-0 ">
-    <img class="w-52 h-72 object-cover" src="src/img/citrouille_01.gif">
+    <img class="w-52 h-72 object-cover" src="src/img/soupe_01.gif">
   </div>
   <div class="p-2 snap-center shrink-0 ">
-    <img class="w-52 h-72 object-cover" src="src/img/courgette_02.gif">
+    <img class="w-52 h-72 object-cover" src="src/img/conf_01.gif">
   </div>
   <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/citrouille_02.gif">
   </div>
   <div class="p-2 snap-center shrink-0 ">
-    <img class="w-52 h-72 object-cover" src="src/img/citrouille_03.gif">
-  </div>
-  <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/conf.jpg">
   </div>
   <div class="p-2 snap-center shrink-0 ">
-    <img class="w-52 h-72 object-cover" src="src/img/courgette_03.gif">
+    <img class="w-52 h-72 object-cover" src="src/img/soupes.gif">
   </div>
   <div class="p-2 snap-center shrink-0 ">
-    <img class="w-52 h-72 object-cover" src="src/img/courgette_02.gif">
+    <img class="w-52 h-72 object-cover" src="src/img/conf_03.gif">
   </div>
   <div class="p-2 snap-center shrink-0 ">
     <img class="w-52 h-72 object-cover" src="src/img/courgette_03.gif">
@@ -145,7 +142,6 @@
   <div class="w-44 h-72 p-2 shrink-0 snap-center ">
     <h3 class="text-xl px-0 text-right cursor-pointer">Voir tout les produits</h3>
   </div> 
- 
   </div>
 
   <!--------------------------------------------------------------------------------------------------------FOOTER-->
