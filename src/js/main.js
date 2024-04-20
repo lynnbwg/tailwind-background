@@ -28,6 +28,47 @@ timeline.from('body',{
         stagger:0.2,
 
     },) 
+//----------------------------------------------LOGO V02
+gsap.timeline({
+    scrollTrigger: {
+    trigger: "#logo",
+    scrub: true,
+    start: 'top top',
+    end: 'bottom 10%',
+    //markers: true,
+        },
+        })
+    .fromTo(
+    "#logo-picto",
+        {
+    opacity:'0',
+    //rotation: 180,
+    //y:'-70px',
+    scale:0.5,
+        },{ 
+    opacity:'1',
+    scale:1,
+    //rotation: 0,
+    //y: '0px',
+    ease: 'none',
+    duration:0.5,
+        },)
+
+//----------------------------------------------VV DESCRIPTION    
+
+        var description = document.getElementById("description");
+        var container = document.querySelector(".vv-description");
+        
+        description.addEventListener('click', () => {
+            if (container.style.display === 'none') {
+                container.style.display = 'block';
+                }
+                else {
+                container.style.display = 'none';
+                }    
+        });
+
+
 //----------------------------------------------THIRD CONTAINER LAST CHANCE
 gsap.timeline({
     scrollTrigger: {
@@ -41,7 +82,7 @@ gsap.timeline({
     .fromTo(
     "#third",
         {
-    x: '+=20px',
+    x: '+=30px',
         },{ 
     x: '0px',
     ease: 'none',
@@ -80,13 +121,32 @@ gsap.timeline({
     .fromTo(
     "#fifth",
         {
-    x: '+=20px',
+    x: '+=30px',
         },{ 
     x: '0px',
     ease: 'none',
     duration:0.5,
         },) 
 
+//----------------------------------------------MENU
+/*gsap.timeline({
+    scrollTrigger: {
+    trigger: "body",
+    scrub: true,
+    start: 'bottom 90%',
+    markers: true,
+        },
+        })
+    .fromTo(
+    "#menu",
+        {
+    width: '41.666667%',
+        },{ 
+    width: '100%',
+    ease: 'none',
+    duration:2,
+        },) 
+*/
 /*
 gsap.registerPlugin(ScrollTrigger);
 

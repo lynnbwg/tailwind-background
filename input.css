@@ -11,17 +11,22 @@ body, aside{
     /*font-family: 'Playfair Display', serif;*/
     font-family:  'Montserrat', sans-serif;
 }
+
 p, li{
     font-family:  'Montserrat', sans-serif;
     font-weight: 400;
 }
-.logo{
-    font-size: 8.5rem;
-    line-height: 1;
+.vv-description{
+    display: none;
 }
-ul{
-    font-size:14px;
+/*
+.cls-1{
+    stroke-linejoin: none!important;
+    stroke-width: 0px!important;
+    fill:rgb(52 211 153)!important;
+    stroke:0px!important;
 }
+*/
 .animation {
     animation-name: rotate;
     animation-duration: 30s;
@@ -78,9 +83,6 @@ body {
   display: none;
 }
 
-nav {
-  float: right;
-}
 /*
 li {
   display: block;
