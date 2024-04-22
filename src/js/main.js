@@ -60,11 +60,11 @@ gsap.timeline({
         var container = document.querySelector(".vv-description");
         
         description.addEventListener('click', () => {
-            if (container.style.display === 'none') {
-                container.style.display = 'block';
+            if (container.style.display === 'block') {
+                container.style.display = 'none';
                 }
                 else {
-                container.style.display = 'none';
+                container.style.display = 'block';
                 }    
         });
 

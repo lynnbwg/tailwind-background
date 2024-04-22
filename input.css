@@ -27,6 +27,9 @@ p, li{
     stroke:0px!important;
 }
 */
+.underline{
+    text-decoration: underline;
+}
 .animation {
     animation-name: rotate;
     animation-duration: 30s;
